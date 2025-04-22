@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation - Save Lives</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Blood Donation</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Donate Blood, Save Lives</h1>
+            <p>Your blood donation can give someone a second chance at life.</p>
+            <button class="cta-button" onclick="scrollToSection('donate')">Donate Now</button>
+        </div>
+    </section>
+
+    <section id="donate" class="donation-form">
+        <h2>Become a Donor</h2>
+        <form id="donorForm">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <select id="bloodGroup" required>
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="number" id="age" required placeholder="Age" min="18" max="65">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" required placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea id="address" required placeholder="Address"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Register as Donor</button>
+        </form>
+    </section>
+
+    <section id="search" class="search-section">
+        <h2>Search Blood Donors</h2>
+        <div class="search-container">
+            <select id="searchBloodGroup">
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <button onclick="searchDonors()">Search</button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Blood Donation</h2>
+        <div class="about-content">
+            <div class="about-card">
+                <h3>Why Donate Blood?</h3>
+                <p>Blood donation is a selfless act that can save multiple lives. Every drop counts!</p>
+            </div>
+            <div class="about-card">
+                <h3>Who Can Donate?</h3>
+                <p>Healthy individuals between 18-65 years can donate blood.</p>
+            </div>
+            <div class="about-card">
+                <h3>How Often?</h3>
+                <p>You can donate blood every 3 months to ensure a safe donation process.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blood Donation Website. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 

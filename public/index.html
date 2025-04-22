@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation - Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Blood Donation</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Save Lives, Donate Blood</h1>
+            <p>Your blood donation can give someone a second chance at life.</p>
+            <a href="#donate" class="btn">Donate Now</a>
+        </div>
+    </header>
+
+    <section id="donate" class="donate-section">
+        <div class="container">
+            <h2>Donate Blood</h2>
+            <p>Register as a blood donor and help save lives.</p>
+            <a href="/register.html" class="btn">Register as Donor</a>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="container">
+            <h2>Find Blood Donors</h2>
+            <div class="search-form">
+                <select id="searchBloodGroup">
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <button id="searchBtn" class="btn">Search</button>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Blood Donation</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Blood donation is a voluntary procedure that can help save the lives of others. There are several types of blood donation, which help meet different medical needs.</p>
+                    <p>Whole blood donation is the most common type of blood donation. During this procedure, approximately 1 pint of blood is collected.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>1 Donation</h3>
+                        <p>Can save up to 3 lives</p>
+                    </div>
+                    <div class="stat">
+                        <h3>56 Days</h3>
+                        <p>Between donations</p>
+                    </div>
+                    <div class="stat">
+                        <h3>38%</h3>
+                        <p>Of the population can donate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blood Donation Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
